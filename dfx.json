@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "memeworld_backend": {
+      "main": "src/memeworld_backend/main.mo",
+      "type": "motoko"
+    },
+    "memeworld_frontend": {
+      "dependencies": [
+        "memeworld_backend"
+      ],
+      "source": [
+        "src/memeworld_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "memeworld_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
